@@ -1,0 +1,132 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+**::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol{
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+a {
+	text-decoration: none;
+  color: inherit;
+}
+
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  min-height: 100vh;
+  background: url('./img/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(113, 108, 108, 0.275);
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.name{
+  height: 25px;
+  background: beige;
+  padding: 5px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input{
+  height: 35px;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+  padding: 0 25px;
+  display: flex;
+  width: 80%;
+  outline: none;
+}
+
+.btn-send{
+  background: #00cec9;
+  border: none;
+  width: 100pcs;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.messages > li:nth-child(even){
+  background: rgba(207, 207, 207, 0.578);
+}
+
+.messages > li:nth-child(odd){
+  background: rgba(161, 158, 158, 0.275);
+}
+
+.message{
+  padding: 10px;
+  color: white;
+}
+
+.message span {
+  font-weight: 500;
+}
